@@ -29,6 +29,7 @@ const itemSchema = new mongoose.Schema(
     },
      FreeShippingEligibility: {
       type: String,
+      required: [true, "Freeshipping is required"],
       default: "",
       trim: true,
     }
